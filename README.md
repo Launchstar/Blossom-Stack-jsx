@@ -14,6 +14,87 @@ Features
 -   DaisyUI: Incorporates DaisyUI, a TailwindCSS plugin that provides beautiful UI components, making the application visually appealing with minimal effort.
 -   Supabase: Includes a Supabase starter to set up a scalable backend with authentication, database, and real-time subscriptions out of the box.
 
+Getting Started
+---------------
+
+### Quick Start with CLI
+
+To quickly start a new project with Blossom-Stack, you can use the `blossom-stack-jsx` CLI tool:
+
+1. Install the CLI tool globally:
+
+
+2. Create a new project:
+
+
+This command clones the Blossom-Stack repository, sets up a new project named `my-new-project`, and installs all dependencies.
+
+### Prerequisites
+
+-   Node.js (v14.0.0 or higher)
+-   npm (v6.0.0 or higher)
+
+### Manual Installation
+
+If you prefer not to use the CLI tool, follow these manual setup steps:
+
+1.  Clone the repository:
+
+ ```
+ git clone https://github.com/alexeiddg/Blossom-Stack.git
+ ```
+
+2.  Navigate into the project directory:
+
+ ```
+ cd Blossom-Stack
+ ```
+
+3.  Install dependencies:
+
+ ```
+ npm install
+ ```
+
+4.  Start the development server:
+
+ ```
+ npm run dev
+ ```
+
+Your application will be available at `http://localhost:5173/`.
+
+### Database Setup
+
+1.  Navigate to the `local-db-env` directory:
+
+ ```
+ cd local-db-env
+ ```
+
+2.  Start the local database environment (ensure Docker is installed):
+
+ ```
+ ./start-database.sh
+ ```
+
+Your database Dashboard will be available at `http://localhost:54323`.
+
+3.  Apply the schema to your database:
+
+ ```
+ psql -U postgres -d your_db_name -a -f schema.sql
+ ```
+or use the Supabase dashboard to create the schema.
+
+### Building for Production
+
+To create a production build, run:
+
+`npm run build`
+
+This command generates a `dist/` folder with your optimized application assets, ready to be deployed.
+
 Folder Structure
 ----------------
 
@@ -38,60 +119,6 @@ Blossom-Stack/
 ├── README.md                    # Project documentation
 └── vite.config.js               # Configuration for Vite
 ```
-
-Getting Started
----------------
-
-To Start Clone this repo and on the root folder of your newly created blossom application run 'npm i @blossomdevs/blossom-jsx-stack' then you can run 'npm run dev' to test your new application!
-
-### Prerequisites
-
--   Node.js (v14.0.0 or higher)
--   npm (v6.0.0 or higher)
-
-### Installation
-
-1.  Clone the repository:
-
-    `git clone https://github.com/alexeiddg/Blossom-Stack.git`
-
-2.  Navigate into the project directory:
-
-    `cd Blossom-Stack`
-
-3.  Install dependencies:
-
-    `npm i @blossomdevs/blossom-jsx-stack`
-
-4.  Start the development server:
-
-    `npm run dev`
-
-    Your application will be available at `http://localhost:5173/`.
-
-### Database Setup
-
-1.  Navigate to the `local-db-env` directory:
-
-    `cd local-db-env`
-
-2.  Start the local database environment (ensure Docker is installed):
-
-    `./start-database.sh`
-    
-3. your database Dashboard will be available at `http://localhost:54323`.
-
-5.  Apply the schema to your database:
-
-    `psql -U postgres -d your_db_name -a -f schema.sql`
-
-### Building for Production
-
-To create a production build, run:
-
-`npm run build`
-
-This command generates a `dist/` folder with your optimized application assets, ready to be deployed.
 
 License
 -------

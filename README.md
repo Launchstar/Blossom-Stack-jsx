@@ -5,6 +5,7 @@ Blossom-Stack is a modern, fast, and efficient development stack designed for bu
 
 Features
 --------
+[![My Skills](https://skillicons.dev/icons?i=react,vite,postgres,tailwind,npm)](https://skillicons.dev) 
 
 -   Vite: Utilizes Vite for an ultra-fast development server and build tool, significantly improving the development experience with hot module replacement (HMR) and optimized build times.
 -   React: Builds user interfaces with React, enabling developers to create complex UIs from isolated pieces of code called components.
@@ -16,12 +17,10 @@ Features
 Folder Structure
 ----------------
 
-
-`Blossom-Stack/
-│
+```
+Blossom-Stack/
 ├── public/                      # Static assets like images and icons
 │   └── favicon.ico              # Favicon
-│
 ├── src/                         # Source files
 │   ├── assets/                  # Module assets like images and fonts
 │   ├── components/              # UI components
@@ -30,16 +29,15 @@ Folder Structure
 │   ├── pages/                   # Page components
 │   ├── app.jsx                  # Main React component
 │   └── main.jsx                 # Entry point for React app
-│
 ├── local-db-env/                # Local database environment setup
 │   ├── schema.sql               # Database schema
 │   └── start-database.sh        # Script to start the local database
-│
 ├── .gitignore                   # Specifies intentionally untracked files to ignore
 ├── index.html                   # Entry point for the application
 ├── package.json                 # Project manifest
 ├── README.md                    # Project documentation
-└── vite.config.js               # Configuration for Vite`
+└── vite.config.js               # Configuration for Vite
+```
 
 Getting Started
 ---------------
@@ -61,7 +59,7 @@ Getting Started
 
 3.  Install dependencies:
 
-    `npm install`
+    `npm i @blossomdevs/blossom-jsx-stack`
 
 4.  Start the development server:
 

@@ -67,7 +67,7 @@ To Start Clone this repo and on the root folder of your newly created blossom ap
 
     `npm run dev`
 
-    Your application will be available at `http://localhost:3000`.
+    Your application will be available at `http://localhost:5173/`.
 
 ### Database Setup
 
@@ -78,8 +78,10 @@ To Start Clone this repo and on the root folder of your newly created blossom ap
 2.  Start the local database environment (ensure Docker is installed):
 
     `./start-database.sh`
+    
+3. your database Dashboard will be available at `http://localhost:54323`.
 
-3.  Apply the schema to your database:
+5.  Apply the schema to your database:
 
     `psql -U postgres -d your_db_name -a -f schema.sql`
 

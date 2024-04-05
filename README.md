@@ -42,6 +42,8 @@ Blossom-Stack/
 Getting Started
 ---------------
 
+To Start Clone this repo and on the root folder of your newly created blossom application run 'npm i @blossomdevs/blossom-jsx-stack' then you can run 'npm run dev' to test your new application!
+
 ### Prerequisites
 
 -   Node.js (v14.0.0 or higher)

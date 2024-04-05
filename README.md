@@ -21,11 +21,13 @@ Getting Started
 
 To quickly start a new project with Blossom-Stack, you can use the `blossom-stack-jsx` CLI tool:
 
-1. Install the CLI tool globally:
+1. Install the CLI tool:
 
+`npm install -g @blossomdevs/blossom-stack-jsx`
 
 2. Create a new project:
 
+`blossom-stack-jsx create my-blossom-project.`
 
 This command clones the Blossom-Stack repository, sets up a new project named `my-new-project`, and installs all dependencies.
 

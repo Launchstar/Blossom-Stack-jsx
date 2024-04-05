@@ -16,7 +16,6 @@ Features
 Folder Structure
 ----------------
 
-graphqlCopy code
 
 `Blossom-Stack/
 │
@@ -54,25 +53,17 @@ Getting Started
 
 1.  Clone the repository:
 
-    bashCopy code
-
     `git clone https://github.com/alexeiddg/Blossom-Stack.git`
 
 2.  Navigate into the project directory:
-
-    bashCopy code
 
     `cd Blossom-Stack`
 
 3.  Install dependencies:
 
-    Copy code
-
     `npm install`
 
 4.  Start the development server:
-
-    arduinoCopy code
 
     `npm run dev`
 
@@ -82,27 +73,19 @@ Getting Started
 
 1.  Navigate to the `local-db-env` directory:
 
-    bashCopy code
-
     `cd local-db-env`
 
 2.  Start the local database environment (ensure Docker is installed):
 
-    bashCopy code
-
     `./start-database.sh`
 
 3.  Apply the schema to your database:
-
-    cssCopy code
 
     `psql -U postgres -d your_db_name -a -f schema.sql`
 
 ### Building for Production
 
 To create a production build, run:
-
-arduinoCopy code
 
 `npm run build`
 
